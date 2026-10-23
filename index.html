@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A little birthday surprise 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="topline"><span class="tiny-heart">♥</span><span>MADE WITH LOVE, JUST FOR YOU</span><span class="tiny-heart">♥</span></header>
+    <main id="book" class="book">
+      <section class="slide active" data-slide="0">
+        <p class="eyebrow">girl, here's the perfect birthday surprise for<br>the girl that will be remembered forever 💗</p>
+        <div class="paper hero-paper">
+          <span class="tape tape-a"></span><span class="tape tape-b"></span>
+          <div class="doodle stars">✦ ✧ ✦</div>
+          <h1 class="cutout-title"><span>H</span><span>A</span><span>P</span><span>P</span><span>Y</span><br><span>B</span><span>I</span><span>R</span><span>T</span><span>H</span><span>D</span><span>A</span><span>Y</span></h1>
+          <p class="scribble">to meri jaan ✿</p>
+          <button class="primary" data-next>open your surprise ✨</button>
+        </div>
+      </section>
+      <section class="slide" data-slide="1">
+        <div class="paper">
+          <span class="tape tape-a"></span><h2>Blow out the candles!!</h2>
+          <p class="subtext">make a wish, birthday girl 🕯️</p>
+          <div class="cake" aria-label="birthday cake"><div class="candles">🕯️🕯️🕯️🕯️🕯️</div><div class="icing"></div><div class="cake-body">🎂</div><div class="sprinkles">✦ · ✧ · ✦</div></div>
+          <button class="primary" data-next>my wish for you →</button>
+        </div>
+      </section>
+      <section class="slide" data-slide="2">
+        <div class="paper">
+          <span class="tape tape-b"></span><h2>Yay!! Happy Birthdayyy 💙</h2>
+          <div class="big-sticker">🎉</div>
+          <p class="letter">I hope this year brings you the kind of happiness that stays, people who choose you every day, and little moments that turn into your favourite memories.</p>
+          <button class="primary" data-next>there's more… →</button>
+        </div>
+      </section>
+      <section class="slide" data-slide="3">
+        <div class="paper">
+          <h2>Accept your gifts? 🎁</h2>
+          <div class="gift-illustration">🐱🎀</div>
+          <p class="subtext">choose wisely, birthday girl</p>
+          <div class="choices"><button class="pill" id="yesBtn">YES 💗</button><button class="pill" id="noBtn">NO 🙈</button></div>
+          <p id="choiceMsg" class="choice-msg" aria-live="polite"></p>
+          <button class="primary hidden" id="continueBtn" data-next>okay, open them →</button>
+        </div>
+      </section>
+      <section class="slide" data-slide="4">
+        <div class="paper collage">
+          <h2>Glimpse of your beauty 🌷</h2>
+          <div class="memory-grid">
+            <div class="polaroid tilt-left">
+              <img class="memory-photo" src="photo1.jpeg" alt="Our memory">
+              <span>you deserve flowers</span>
+            </div>
+
+            <div class="polaroid tilt-right">
+              <img class="memory-photo" src="photo2.jpeg" alt="A happy memory">
+              <span>little happy things</span>
+            </div>
+
+            <div class="polaroid tilt-left">
+              <img class="memory-photo" src="photo3.jpg" alt="Our friendship">
+              <span>I love you so much</span>
+            </div>
+            <button class="primary" data-next>
+  💌 click here for a surprise 🎁
+</button>
+<p class="surprise-hint">hehe, I'm not done yet♡</p>
+          </div>
+      </section>
+      <section class="slide" data-slide="5">
+        <div class="paper final-paper">
+          <h2>Yay! Choose your gift 🎁</h2>
+          <div class="gift-row"><button class="gift-card" id="voiceGift"><span>🎁</span><b>Secret voice note</b><small>tap to unwrap</small></button></div>
+          <div id="voiceReveal" class="voice-reveal hidden">
+            <div class="envelope">💌</div><h3>a msg from our fav. Digraj sir</h3>
+            
+            <audio id="voicePlayer" controls preload="none"><source src="voice-note.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+           
+          </div>
+          <p class="letter">Happy birthday, meri jaan. Keep being exactly you. The world is better with you in it. ♡</p>
+          <button class="primary" id="restartBtn">read it all again ↻</button>
+        </div>
+      </section>
+      <nav class="controls"><button id="prevBtn" aria-label="Previous slide">←</button><span id="counter">01 / 06</span><button id="nextBtn" aria-label="Next slide">→</button></nav>
+    </main>
+    <footer>made with a little extra love <span>♡</span></footer>
+  </div>
+  <audio id="backgroundMusic" loop preload="none"><source src="song.mp3" type="audio/mpeg"></audio>
+  <button id="musicToggle" class="music-toggle" aria-label="Play or pause birthday song">♫ <span id="musicLabel">play</span></button>
+  <script src="script.js"></script>
+</body>
+</html>
